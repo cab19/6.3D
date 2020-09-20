@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!------ Include the above in your HEAD tag ---------->
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+		<link rel="stylesheet" href="/css/styles.css">
+		<title>iCrowdTask - Forgot Password</title>
+	</head>
+	<body>
+		<div class="container">
+		<div class="card bg-light">
+		<article class="card-body mx-auto" style="max-width: 400px;">
+			<h4 class="card-title mt-3 text-center">Forgot your password?</h4>
+			<p class="text-center">An email will be sent to registered accounts</p>
+			<form action="/resetpass" method="POST">
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+					</div>
+					<input name="username" class="form-control" placeholder="Email address *" type="email" required="required">
+				</div> <!-- form-group// -->                                     
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block">Reset Password</button>
+				</div> <!-- form-group// -->    
+				<p class="text-center">Don't have an account? <a href="/reqregister">Register Account</a> </p>                                                                 
+			</form>
+		</article>
+		</div> <!-- card.// -->
+
+		</div> 
+		<!--container end.//-->
+		</article>
+	</body>
+</html>
